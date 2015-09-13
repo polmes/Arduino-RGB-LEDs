@@ -2,7 +2,6 @@
 Arduino + HTML code to control RGB LED Lights through a web interface from your phone, using the DMX protocol
 
 ## Structure
-.
 
 ├── debug.ino - Arduino code for testing, includes extra libraries (to be compiled on an Arduino Mega 2560)
 
