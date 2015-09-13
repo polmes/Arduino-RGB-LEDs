@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    
+        <!-- Main -->
+        <title>Arduino says: Pick your color!</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        
+        <!-- jQuery Mobile -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <!-- Custom CSS -->
+        <style type="text/css">
+            .centered {
+                text-align: center;
+            }
+        </style>
+        
+    </head> 
+    
+    <body> 
+    
+        <div data-role="page">
+
+            <div data-role="header">
+                <h1>Pick your color!</h1>
+            </div>
+            
+            <div data-role="content">
+                
+                <a href="/?r=0&g=0&b=0" class="ui-btn ui-corner-all" style="background: black; color: white;">Turn lights off</a>
+          
+                </div>
+                
+                <p class="centered">As fast as possible...</p>
+                <div class="ui-grid-d centered">
+                    <a href="/?r=255&g=255&b=255" class="ui-btn ui-corner-all ui-btn-inline" style="background: white; text-shadow: none;">White</a>
+                    <a href="/?r=255&g=90&b=0" class="ui-btn ui-corner-all ui-btn-inline" style="background: #FFC800; text-shadow: none;">Warm</a>
+                    <a href="/?r=255&g=128&b=50" class="ui-btn ui-corner-all ui-btn-inline" style="background: #FFE1C8; text-shadow: none;">Clear</a>
+                    <a href="/?r=255&g=0&b=0" class="ui-btn ui-corner-all ui-btn-inline" style="background: red; color: white; text-shadow: none;">Red</a>
+                    <a href="/?r=255&g=60&b=0" class="ui-btn ui-corner-all ui-btn-inline" style="background: #FF6400; color: white; text-shadow: none;">Orange</a>
+                    <a href="/?r=0&g=255&b=255" class="ui-btn ui-corner-all ui-btn-inline" style="background: #00FFFF; text-shadow: none;">Light blue</a>
+                    <a href="/?r=0&g=0&b=255" class="ui-btn ui-corner-all ui-btn-inline" style="background: #0000FF; color: white; text-shadow: none;">Deep blue</a>
+                    <a href="/?r=0&g=255&b=0" class="ui-btn ui-corner-all ui-btn-inline" style="background: #00FF00; text-shadow: none;">All green</a>
+                    <a href="/?r=0&g=255&b=128" class="ui-btn ui-corner-all ui-btn-inline" style="background: #00FFC8; text-shadow: none;">Bluish green</a>
+                </div>
+
+                <p class="centered">... or from 0 to 255</p>
+                <form method="get">
+                    <fieldset class="ui-grid-c centered">
+                        <div class="ui-block-a"><input id="red" type="text" name="r" placeholder="Red" data-mini="true"></div>
+                        <div class="ui-block-b"><input id="green" type="text" name="g" placeholder="Green" data-mini="true"></div>
+                        <div class="ui-block-c"><input id="blue" type="text" name="b" placeholder="Blue" data-mini="true"></div>
+                        <div class="ui-block-d"><input type="submit" value="Go!" data-mini="true"></div>
+                    </fieldset>
+                    
+                </form>
+                                
+            </div>
+            
+            <footer class="centered"><small>&copy Pol Mesalles Ripoll, 2015</small></footer>
+            
+        </div>
+    
+    </body>
+    
+</html>
