@@ -12,4 +12,4 @@ Arduino + HTML code to control RGB LED Lights through a web interface from your 
 ```
 
 ## Read more
-http://coderagora.com - Coming soon!
+https://coderagora.com/2016/09/05/control-rgb-led-lights/
